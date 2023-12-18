@@ -1,0 +1,400 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: rgb(20, 21, 21);
+  
+  font-family: 'poppins',sans-serif;
+}
+.logo{
+  color: white;
+
+}
+.menubar{
+  color: white;
+  font-size: 2.4rem;
+  display: none;
+}
+.menubar:hover{
+  cursor: pointer;
+}
+.navbar{
+  height: 6.5rem;
+  width: 100%;
+  background-color: rgb(20, 21, 21);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+}
+.nav-item{display: flex;gap: 3.5rem;font-size: 1.3rem;}
+.nav-item li{list-style: none;}
+.nav-item li a{
+  text-decoration: none;
+  color: white;
+  
+}
+.nav-item li a:hover{ 
+  color: rgb(63, 180, 235);
+}
+.pop-menu{
+  display: none;
+}
+#Home{
+  height: 70rem;
+  position: relative;
+}
+#Home .head-content{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.head-content h1{
+  font-size: 3rem;
+  color: white;
+  font-weight: 900;
+}
+.head-content h3{
+  font-size: 2.6rem;
+  color: rgb(55, 159, 197);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.head-content a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(79, 168, 241);
+  padding: 0.5rem 1.7rem;
+  border-radius: 5%;
+ 
+  
+}
+.head-content a:hover{
+  border: 2px solid white;
+  background-color: rgb(17, 22, 24);
+  color: white;
+}
+#Project{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+  
+}
+.project-content{
+  
+  width: 45%
+}
+.project-content h1{
+  text-align: center;
+  padding: 1.5rem 0; 
+  color: rgb(66, 177, 242);
+  font-size: 3rem;
+  font-weight: 900;
+}
+.project-content p{
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.project-content li{   
+  color: rgb(66, 177, 242);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.image-content{
+  
+  width: 45%
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.image-content h3{
+  margin: 1rem 2rem;
+}
+.image-content h3 a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(121, 199, 247);
+  transition: all 0.2s linear;
+}
+.image-content h3 a:hover{
+  font-size: 1.55rem;
+  color: white;
+  
+}
+#About{
+  margin-top: 10rem;
+}
+table{
+  width: 70%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  margin-bottom: 7rem;        
+}
+table th{
+  padding: 15px 15px;
+  font-size: 2rem;
+  color: rgb(30, 123, 181);
+  text-align: left;
+  
+  
+
+}
+table td{
+  padding: 15px 15px;
+  font-size: 1.6rem;
+  color: white;
+  
+  
+}
+#About h1{
+  text-align: center;
+  padding-top: 7rem;
+  font-size: 3rem;
+  color: rgb(30, 123, 181);
+  
+}
+.python h3, .web-tech h3, .sql h3{
+  color: rgb(30, 123, 181);
+  font-size: 2rem;
+  
+}
+.python ul li, .web-tech ul li, .sql ul li{
+  font-size: 1.6rem;
+  color: white;
+ 
+}
+.python, .web-tech, .sql{
+  display: none;
+}
+#Contact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.address h6{
+  font-size: 1.7rem;
+  color: rgb(36, 140, 189);
+  font-weight: 200;
+}
+.address p{
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+}
+.links{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links li{
+  list-style: none;
+  font-size: 1rem;
+  color: white;
+  
+}
+.links a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.links p{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+@media (min-width:0px) and (max-width:600px) {
+  nav{
+      display: none;
+  }
+  .navbar{
+      justify-content: space-between;
+  }
+  .logo{
+      margin-left: 1.5rem;
+  }
+  .menubar{
+      margin-right: 1.5rem;
+      display: block;
+  }
+  .pop-menu{
+      height: 23rem;
+      width: 100%;
+      background-color: rgba(26, 23, 23, 0.385);
+      backdrop-filter: blur(15px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      display: none;
+  }
+  .pop-menu p{
+      margin-bottom: 1rem;
+      
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+      text-align: center;
+      transition: all 1s linear;
+  }
+  .pop-menu p a{
+      text-decoration: none;
+      color: white;
+      
+  }
+  .pop-menu p:hover{
+      background-color: rgba(122, 125, 125, 0.221);
+  }
+
+  .pop-menu h4{
+      color: white;
+      font-size: 2.4rem;
+      text-align: end;
+      padding-right: 1.5rem;
+  }
+  .pop-menu h4:hover{
+      cursor: pointer;
+  }
+  #Home .head-content{
+      top: 40%;
+      left: 28%;
+  }
+  .head-content h1{
+      font-size: 2.5rem;
+      font-weight: 900;
+  }
+  .head-content h3{
+      font-size: 2rem;
+      color: rgb(55, 159, 197);
+      font-weight: 800;
+      margin-bottom: 1rem;
+  }
+  #Project{
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .project-content{
+      
+      width: 92%
+    }
+    .project-content h1{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .project-content p{               
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .project-content li{   
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+    .image-content{ 
+      width: 92%
+    }
+    table{
+      display: none;
+    }
+    .python, .web-tech, .sql{
+      display: block;
+      margin-left: 3rem;
+    }
+    #Contact{
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .links{
+      flex-direction: column;
+    }
+    .links li p{
+      display: inline-block;
+      padding-left: 1rem;
+    }
+  
+}
+@media (min-width:601px) and (max-width:900px) {
+  #Project{
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .project-content{
+      
+      width: 92%
+    }
+    .project-content h1{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .project-content p{               
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .project-content li{   
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+    .image-content{    
+      width: 92%
+    }
+    table{
+      width: 90%;
+    }
+  
+}
+@media (min-width:901px) and (max-width:1200px){
+  #Project{
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .project-content{
+      
+      width: 92%
+    }
+    .project-content h1{
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    .project-content p{               
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .project-content li{   
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    .image-content{  
+      width: 92%
+    }
+  
+}

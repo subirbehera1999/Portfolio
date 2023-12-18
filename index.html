@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="navbar">
+        <h1 class="logo">PORTFOLIO</h1>
+        <h2 class="menubar" onclick="showmenu()">&#8801;</h2>
+        <nav>
+            <ul class="nav-item">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+
+    <!-- pop up menu start -->
+    <div class="pop-menu">
+        <p><a href="#Home">Home</a></p>
+        <p><a href="#Project">Project</a></p>
+        <p><a href="#About">About</a></p>
+        <p><a href="#Contact">Contact</a></p>
+        <h4 class="close" onclick="hidemenu()">&times;</h4>
+    </div>
+    <!-- pop up menu end -->
+
+
+
+
+    <!-- home section start -->
+    <div id="Home">
+        <div class="head-content">
+            <h1>Hi, i'm Subir Kumar Behera</h1>
+        <h3>Full Stack Developer</h3>
+        <a href="./assets/files/Subirkumar.pdf" download="Subirkumar.pdf">Download CV</a>
+        </div>
+    </div>
+    <!-- home section end -->
+
+
+
+    <!-- project section start -->
+    <div id="Project">
+        <div class="project-content">
+            <h1>Weather Forcasting web-application</h1>
+            <p>Hi,there.</p>
+            <p>I Developed a web application using Django to display real-time <br> weather information based on user-specified locations.</p>
+            <ul>
+              <li>Overview</li>
+              <p>Created a user-friendly web application that allows users to<br>input a location and receive up-to-the-minute weather data.<br> Integrated a weather API for data retrieval and provided an<br> intuitive interface for users to access current weather conditions.</p>
+              <li>Skills Demonstrated</li>
+              <p>Django, Python, API integration, HTML, CSS, JavaScript</p>
+              <li>Role</li>
+              <p>Solo Developer</p>
+              <li>Challenges</li>
+              <p>implementation of backend part and API integration with<br> responsiveness for seamless user experience.</p>
+            </ul>
+         </div>
+         <div class="image-content">
+            <img src="./assets/images/homepage.png" alt="image not found" srcset="">
+            <h3><a href="#">[ Project Link ]</a></h3>
+         </div>
+    </div>
+    <!-- project section end -->
+
+
+
+
+    <!-- about section start -->
+    <div id="About">
+        <h1>Technical Skills</h1>
+    <table>
+      <tr>
+        <th>Python</th>
+        <th>Web-Tech</th>
+        <th>SQL</th>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>Data structures</li>
+            <li>Functions and modules</li>
+            <li>File Handling</li>
+            <li>Error Handling</li>
+            <li>OOP concepts</li>
+            <li>Numpy</li>
+            <li>searching & searching Techniques</li>
+          </ul>         
+        </td>
+        <td>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>Django Framework</li>
+            <li>RESTful APIs</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          <li>DDL, DML</li>
+          <li>DCL, DQL</li>
+          <li>TCL</li>
+          <li>JOIN concepts</li>
+          <li>Normalization</li>
+          <li>VIEWs and CTEs</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <div class="python">
+        <h3>Python</h3>
+        <ul>
+            <li>Data structures</li>
+            <li>Functions and modules</li>
+            <li>File Handling</li>
+            <li>Error Handling</li>
+            <li>OOP concepts</li>
+            <li>Numpy</li>
+            <li>searching & searching Techniques</li>
+        </ul>
+    </div>
+    <div class="web-tech">
+        <h3>Web-Tech</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>Django Framework</li>
+            <li>RESTful APIs</li>
+          </ul>
+    </div>
+    <div class="sql">
+        <h3>SQL</h3>
+        <ul>
+            <li>DDL, DML</li>
+            <li>DCL, DQL</li>
+            <li>TCL</li>
+            <li>JOIN concepts</li>
+            <li>Normalization</li>
+            <li>VIEWs and CTEs</li>
+            </ul>
+    </div>
+    </div>
+    <!-- about section end -->
+
+
+
+    
+    <!-- contact section start -->
+    <div id="Contact">
+        <div class="address">
+            <h6>Address</h6>
+            <p>marathahalli, Bangalore <br>Karnataka,pin: 560037</p>
+          </div>
+          <ul class="links">
+            <li><i class="fa-solid fa-2xl fa-envelope"></i><p style="margin-top: 0.2rem;">subirbehera1999@gmail.com</p></li>
+            <li><i class="fa-solid fa-phone fa-2xl"></i><p style="margin-top: 0.2rem;">+91-89174-98089</p></li>
+            <li><i class="fa-brands fa-github fa-2xl"></i><p style="margin-top: 0.2rem;"><a href="github.com/subirbehera1999/"> subirbehera1999</a></p></li>
+
+    </div>
+    <!-- contact section end -->
+
+
+    <script>
+        function showmenu(){
+            const popmenu = document.querySelector(".pop-menu");
+            popmenu.style.display="block";  
+            
+        }
+        function hidemenu(){
+            const popmenu = document.querySelector(".pop-menu");
+            popmenu.style.display="none"; 
+            
+        }
+        var popMenu = document.querySelector('.pop-menu');
+        var pTags = popMenu.querySelectorAll('p');
+        pTags.forEach(function (pTag) {
+              pTag.addEventListener('click', function () {                 
+                  var target = pTag.querySelector('a').getAttribute('href');
+                  document.querySelector(target).scrollIntoView();
+                  popMenu.style.display = 'none';
+              });
+            });
+    </script>
+</body>
+</html>
